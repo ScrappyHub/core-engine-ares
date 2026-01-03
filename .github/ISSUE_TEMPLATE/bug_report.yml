@@ -1,0 +1,33 @@
+name: 🐛 Bug Report
+description: Report a defect or unexpected behavior
+title: "[BUG]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: Describe the bug clearly.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Governance impact
+      options:
+        - None
+        - Potential
+        - Confirmed
+    validations:
+      required: true
