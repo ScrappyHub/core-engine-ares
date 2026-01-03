@@ -1,0 +1,26 @@
+name: ✨ Feature Request
+description: Propose a new feature or capability
+title: "[FEATURE]: "
+labels: ["feature"]
+body:
+  - type: textarea
+    attributes:
+      label: Problem statement
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Governance classification
+      options:
+        - Implementation only
+        - New capability (governance review required)
+        - Experimental / non-binding
+    validations:
+      required: true
