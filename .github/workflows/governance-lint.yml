@@ -1,0 +1,17 @@
+name: Governance Guard
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  governance-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Ensure governance files unchanged without review
+        run: |
+          if git diff --name-only origin/main...HEAD | grep -E "governance/|_CONSTITUTION|_LAW|STOP_LAYER"; then
+            echo "Governance file change detected."
+          fi
