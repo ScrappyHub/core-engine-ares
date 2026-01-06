@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "engine_code": "ARES",
+  "engine_version": "1.0.0",
+  "allowed_inputs_from_other_engines": [
+    { "engine_code": "SIGNAL", "via": "CORE_MEDIATED_CONTRACT" }
+  ],
+  "allowed_outputs_to_other_engines": [
+    { "engine_code": "RGSR", "via": "CORE_MEDIATED_CONTRACT" },
+    { "engine_code": "SIGNAL", "via": "CORE_MEDIATED_CONTRACT" }
+  ],
+  "direct_engine_to_engine_calls": false
+}
