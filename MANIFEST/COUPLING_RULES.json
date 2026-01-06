@@ -2,12 +2,12 @@
   "schema_version": "1.0.0",
   "engine_code": "ARES",
   "engine_version": "1.0.0",
-  "allowed_inputs_from_other_engines": [
-    { "engine_code": "SIGNAL", "via": "CORE_MEDIATED_CONTRACT" }
-  ],
+  "delivery_model": "CORE_ONLY",
+  "core_mediated_coupling": true,
+  "allowed_inputs_from_other_engines": [],
   "allowed_outputs_to_other_engines": [
-    { "engine_code": "RGSR", "via": "CORE_MEDIATED_CONTRACT" },
-    { "engine_code": "SIGNAL", "via": "CORE_MEDIATED_CONTRACT" }
+    { "engine_code": "SIGNAL", "via": "CORE_ONLY" },
+    { "engine_code": "RGSR", "via": "CORE_ONLY" }
   ],
   "direct_engine_to_engine_calls": false
 }
