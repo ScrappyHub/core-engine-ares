@@ -1,66 +1,98 @@
-# 🔊 CORE ENGINE — ARES GOVERNANCE (CANONICAL)
+# ARES — Acoustic Resonance Engine
 
-File: `verticals/ares/CORE_ARES_ENGINE_GOVERNANCE.md`  
-Engine Key: **ARES**  
-Authority Level: Engine Governance (Binding)  
-Status: ✅ BINDING | ✅ NON-OPTIONAL  
+ARES is a **deterministic acoustic physics engine** within the CORE Engine Family.
 
-## 1. Authority & Inheritance
+ARES computes **acoustic domain truth only**.  
+It does not manage users, governance, policy, or publishing.
 
-ARES is permanently bound by CORE platform governance:
-- Stop Layer, Constitution, Registry Law, Governance Index, Engine Registry Contract
+---
 
-ARES defines physics execution only.
+## Engine Role
 
-## 2. Scope (What ARES Is)
+**Engine Type:** TRUTH_ENGINE  
+**Domain:** Acoustics  
+**Governance Owner:** CORE Platform  
+**Execution Context:** CORE-orchestrated only
 
-ARES models acoustic wave behavior:
-- propagation, reflection, absorption
-- standing waves and modal maps
-- harmonic peaks and Q-factor estimates
-- pressure/velocity fields (where applicable)
+ARES produces sealed, reproducible acoustic outputs suitable for scientific,
+engineering, and cross-domain fusion analysis.
 
-## 3. Non-Scope (What ARES Is Not)
+---
 
-ARES may NOT:
-- access sensors or devices directly without CORE orchestration
-- infer cross-project identity or data
-- generate non-evidence “claims” beyond computed outputs
-- publish outside CORE permissions
+## What ARES Computes
 
-## 4. Determinism & Reproducibility
+ARES models acoustic wave behavior including:
 
-ARES runs must be reproducible given:
-- geometry/material inputs
+- wave propagation and attenuation
+- boundary reflection and absorption
+- standing waves and modal structure
+- harmonic resonance and Q-factor estimates
+- pressure / velocity fields (as declared by schema)
+
+ARES outputs **measured or computed fields**, never interpretations.
+
+---
+
+## What ARES Does NOT Do
+
+ARES does NOT:
+
+- access sensors or devices directly
+- manage identity, permissions, or billing
+- infer intent, attribution, or causality
+- perform medical, biological, or defense classification
+- publish data or make decisions
+- call other engines directly
+- access networks or external systems
+
+ARES is compute-only.
+
+---
+
+## Determinism & Reproducibility
+
+ARES runs are reproducible given identical:
+
+- geometry and material inputs
 - boundary conditions
 - excitation definitions
-- engine release identity
+- solver parameters
+- engine version
 
-Non-deterministic modes (if any) must be explicitly labeled and logged.
+Any non-deterministic behavior must be explicitly declared in the manifest and
+is disabled by default.
 
-## 5. Required Artifacts (Minimum Bundle)
+---
 
-ARES must output:
-- `ENGINE_MANIFEST.json`
-- `RUN_CONDITIONS.json`
-- `SHA256SUMS.txt`
-- `ACOUSTIC_FIELD.json` (or equivalent structured field output)
-- `MODAL_MAP.json`
-- `FREQUENCY_RESPONSE.json`
-- `PEAKS.json`
-- `ARTIFACT_INDEX.json`
+## Outputs & Sealing
 
-## 6. Safety & Misuse Controls
+ARES emits a **sealed artifact bundle** including:
 
-ARES must:
-- label output units and constraints
-- prevent “medical/biological interpretation” unless routed through governed vertical lenses
-- expose uncertainty when inputs are incomplete
+- canonical input payload
+- canonical output payload
+- manifest + schema references
+- SHA-256 hashes for verification
+- domain artifacts (modal maps, spectra, fields)
 
-## 7. Publishing & Export Rules
+All outputs are sealed and verified by CORE.
 
-Export requires sealed run + hashes + manifest included.
+---
 
-## 8. Amendment Rules
+## Governance
 
-Changes require CORE governance review.
+ARES is permanently bound by CORE governance:
+
+- CORE_CONSTITUTIONAL_STOP_LAYER
+- CORE_PLATFORM_CONSTITUTION
+- CORE_ENGINE_REGISTRY_AND_VERTICAL_INHERITANCE_LAW
+- CORE_ENGINE_REGISTRY_CONTRACT
+
+This repository contains **engine truth only**.
+
+---
+
+## License & Use
+
+ARES is intended for governed execution inside CORE.
+
+Direct, ungoverned use is unsupported.
