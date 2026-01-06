@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "engine_code": "ARES",
+  "engine_version": "1.0.0",
+  "required": ["run_id", "engine", "outputs", "metrics"],
+  "engine": {
+    "engine_code": "ARES",
+    "engine_version": "1.0.0"
+  },
+  "outputs": {
+    "type": "object",
+    "description": "Raw acoustic domain outputs only."
+  },
+  "metrics": {
+    "type": "object",
+    "description": "Compute metrics (timings, iteration counts) not business metrics."
+  },
+  "prohibitions": {
+    "must_not_include": [
+      "user_identity",
+      "governance_state",
+      "billing_state",
+      "cross_engine_private_data"
+    ]
+  }
+}
