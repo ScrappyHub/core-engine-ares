@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "engine_code": "ARES",
+  "engine_version": "1.0.0",
+  "required": ["run_id", "project_id", "inputs", "parameters"],
+  "inputs": {
+    "type": "object",
+    "description": "Domain inputs provided by CORE only."
+  },
+  "parameters": {
+    "type": "object",
+    "description": "Deterministic parameters for solver execution."
+  },
+  "context": {
+    "type": "object",
+    "forbidden_fields": [
+      "user_email",
+      "billing_tier",
+      "role",
+      "permissions",
+      "feature_flags"
+    ]
+  }
+}
